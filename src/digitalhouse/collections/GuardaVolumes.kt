@@ -5,7 +5,7 @@ class GuardaVolumes {
 
     fun guardarPeca(vararg listaDePeca: Peca): Int {
         val id = volumes.size
-        volumes.put(id, listaDePeca.asList())
+        volumes[id] = listaDePeca.asList()
         return id
     }
 
